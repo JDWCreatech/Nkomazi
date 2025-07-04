@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nkomazi.MainPage"
+             BackgroundColor="#212121"
+             Title="">
+
+    <ScrollView>
+
+        <Grid
+            RowDefinitions="Auto, Auto, Auto, Auto"
+            ColumnDefinitions="*"
+            RowSpacing="50">
+
+
+            <Grid Grid.Row="0"
+                ColumnDefinitions="*, Auto"
+                VerticalOptions="Center"
+                HorizontalOptions="Fill">
+
+                <Label Grid.Column="0"
+                    x:Name="lblUsername"
+                    TextColor="White"
+                    FontSize="18"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start" />
+
+                <Button Grid.Column="1"
+                    x:Name="bntLoginLogout"
+                    Clicked="btnLogout_Click"
+                    Style="{StaticResource btnNormal}"
+                    Text="Logout"
+                    Padding="10,5"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" />
+            </Grid>
+
+            <!--  _______________________________________________________________Button 1____________________________________________________  -->
+            <Grid Grid.Row="1">
+                <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center">
+                    <Button
+                        Clicked="btnDipReading_Click"
+                        Style="{StaticResource btnNormal}"
+                        Text="Dip Reading" 
+                        FlexLayout.Basis="40%"
+                        Padding="25" />
+                </FlexLayout>
+            </Grid>
+
+            <!--  _______________________________________________________________Button 2____________________________________________________  -->
+            <Grid Grid.Row="2">
+                <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center">
+                    <Button
+                        Clicked="btnOrders_Click"
+                        Style="{StaticResource btnNormal}"
+                        Text="Orders" 
+                        FlexLayout.Basis="40%"
+                        Padding="25"/>
+                </FlexLayout>
+            </Grid>
+
+            <!--  _______________________________________________________________Button 3____________________________________________________  -->
+            <Grid Grid.Row="3">
+                <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center">
+                    <Button
+                        Clicked="btnPOD_Click"
+                        Style="{DynamicResource btnNormal}"
+                        Text="POD" 
+                        FlexLayout.Basis="40%"
+                        Padding="25"/>
+                </FlexLayout>
+            </Grid>
+        </Grid>
+        
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nkomazi.Pages.DipReading"
+             Title="DipReading"
+             BackgroundColor="#212121">
+    
+    
+    <VerticalStackLayout>
+
+        <Grid
+            RowDefinitions="Auto, Auto"
+            ColumnDefinitions="*">
+
+            <Grid Grid.Row="0">
+
+                <FlexLayout>
+                    <Picker
+                        x:Name="lueLocation"
+                        Title="Select your Location"
+                        ItemsSource="{Binding LocationsView}"
+                        ItemDisplayBinding="{Binding LocationName}"
+                        SelectedIndexChanged="OnLocationChanged"
+                        FlexLayout.Basis="40%"/>
+                </FlexLayout>
+            </Grid>
+
+            <Grid Grid.Row="1">
+
+                <Entry Placeholder="Enter Qty:" />
+            </Grid>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
