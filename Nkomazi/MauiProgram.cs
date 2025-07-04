@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Syncfusion.Licensing;
 using System.Globalization;
 
 namespace Nkomazi

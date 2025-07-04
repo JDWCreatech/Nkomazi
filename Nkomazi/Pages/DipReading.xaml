@@ -18,9 +18,6 @@
                     <Picker
                         x:Name="lueLocation"
                         Title="Select your Location"
-                        ItemsSource="{Binding LocationsView}"
-                        ItemDisplayBinding="{Binding LocationName}"
-                        SelectedIndexChanged="OnLocationChanged"
                         FlexLayout.Basis="40%"/>
                 </FlexLayout>
             </Grid>

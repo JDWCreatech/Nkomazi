@@ -8,9 +8,6 @@
     Title="Nkomazi">
 
     <!-- Once logged in, we'll navigate to this -->
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
 
 </Shell>
